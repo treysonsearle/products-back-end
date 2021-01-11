@@ -12,7 +12,7 @@ connectionString: CONNECTION_STRING,
 ssl: {rejectUnauthorized: false}
 })
   .then(dbInstance => {
-    app.set("db", dbInstance);
+    app.set("db", db);
     console.log('im working')
   })
   .catch(err => console.log(err));
